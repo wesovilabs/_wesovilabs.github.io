@@ -1,0 +1,32 @@
+# Site settings
+title: WesoviLabs
+email: developer@wesovi.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.wesovilabs.com" # the base hostname & protocol for your site
+twitter_username: wesovi
+github_username:  wesovilabs
+
+# Build settings
+markdown: kramdown
+
+
+#jekyll-paginate
+
+paginate: 3
+paginate_path: "/blog/page:num"
+
+permalink: pretty
+
+gems: [jekyll-paginate, jekyll-gist]
+
+
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+incremental: fals

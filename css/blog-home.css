@@ -1,0 +1,39 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+footer {
+    margin: 50px 0;
+}
+
+a {
+    color: #000000;
+
+}
+a{
+    color: #000000;
+}
+a:hover , a:focus, .emailTo {
+    color: #C3270E!important;
+}
+p.lead a {
+    color: #777;
+}
+
+.well{
+    background: #f8f8f8;
+}
+
+.well p {
+    color: #8c8c8c;
+}
+
+.well li a , p{
+    color: #6e6e6e;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
