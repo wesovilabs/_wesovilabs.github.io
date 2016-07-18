@@ -4,7 +4,7 @@ title:  "Getting started with Elixir - Ecto"
 date:   2016-07-16 11:15:02
 description: Working with Ecto.
 categories: exto elixir mix 
-banner_image: "posts/getting_started_with_elixir/elixir-logo.png"
+banner_image: "posts/elixir/elixir-logo.png"
 comments: true
 ---
 ## Purpose
