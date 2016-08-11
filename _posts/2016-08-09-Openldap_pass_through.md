@@ -9,8 +9,8 @@ comments: true
 ---
 
 
-Pass-through authentication is a  machanism that allows delegate a sistem **authentication** in other one. Basically
-this makes sense when we already got a system that manage credentails but we do not have writing privileges. The
+Pass-through authentication is a  mechanism that allows **delegating authentication** from one system to other one. Basically
+this makes sense when we already got a system that manages credentials but we do not have writing privileges in it. The
  way we can extend the security system could be by taking advantage of pass-through authentication. Below a diagram that 
  represents this system.
 
