@@ -1,15 +1,69 @@
 ---
 layout: default
 ---
+<style>
+    ul.share-buttons {
+        list-style: none;
+        padding: 0;
+        display: block;
+        clear: both;
+    }
+
+    ul.share-buttons li {
+        display: inline;
+    }
+</style>
+<ul class="share-buttons pull-right">
+    <li>
+        <a href="https://twitter.com/share?text={{ page.title }}&url={{ page.shorturl }}&via=wesovilabs">
+            <i class="fa fa-twitter-square footer fa-2x"></i>
+        </a>
+    </li>
+    <li>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&source={{ site.title }}">
+            <i class="fa fa-linkedin-square footer fa-2x"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://plus.google.com/share?url=http://www.wesovilabs.com{{ page.url }}&hl=en-US"
+           onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+            <i class="fa fa-google-plus-square footer fa-2x"></i>
+        </a>
+    </li>
+</ul>
+<br/>
 <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+
+        <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{%
+            if page.meta %} • {{ page.meta }}{% endif %}</p>
+    </header>
+
+    <article class="post-content">
+        {{ content }}
+    </article>
+    <br/>
+    <ul class="share-buttons pull-right">
+        <li>
+            <a href="https://twitter.com/share?text={{ page.title }}&url={{ page.shorturl }}&via=wesovilabs">
+                <i class="fa fa-twitter-square footer fa-2x"></i>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&source={{ site.title }}">
+                <i class="fa fa-linkedin-square footer fa-2x"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://plus.google.com/share?url=http://www.wesovilabs.com{{ page.url }}&hl=en-US"
+               onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                <i class="fa fa-google-plus-square footer fa-2x"></i>
+            </a>
+        </li>
+    </ul>
+
 
 </div>
