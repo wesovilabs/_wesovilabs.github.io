@@ -23,23 +23,22 @@ Sometimes in a corporate environment there are many teams that do a similar job 
  of the global system. Moreover after appearing some new positions such as *DevOps*, *SysOps*, *SysAdmin*, *SecOps* (companies are driving crazy but this is 
 another question....)
 
-Working as a *DevOps* I recently needed to face a problem in my current company. Corporate security team manages 
-users credentials and the access to corporate tools by making use of and **Active Directory**. 
+Working as a *DevOps* I recently needed to face a problem in my current company. The corporate security team handles 
+users credentials (and also the access to corporate tools) by making use of and **Active Directory**. 
 
-As a member of the DevOps teams I was required to make a proposal to manage the roles for the **ALM (Application Lifecycle Management) tools** .
-The main requirement was that users should  be able to authenticate into the tools by corporate credentials.  
+As a member of the DevOps team I was required to make a proposal to manage the roles for the **ALM (Application Lifecycle Management) tools** .
+The main requirement was that users should  be able to authenticate into the tools by theirs corporate credentials.  
 
-This had been easy enough to resolve if my team had writing permissions into the Active Directory but it's not the case. 
+This had been easy enough to resolve if my team had writing permissions into the Active Directory but it wasn't the case. 
 
 ## The proposal
 
-Understanding we **can't** and mustn't **replicate** the credentials information into multiple systems I though abut
+Understanding we **can't** and mustn't **replicate** the credentials information into multiple systems (nor the security rules) I though abut
   pass-through authentication. 
   
-As we saw in the above diagram this process could be understood as a way to **inherit a security system**, 
-  populating the current information with some other one. 
+As we saw in the above diagram this process could be understood as a way to **inherit a security system**. 
   
-My team would be handle the authentication into the ALM Tools by the new system which would be delegation authentication
+My team would be handle the authentication into the ALM Tools by an Openldap that would be delegating the authentication
  to the corporate one. This new piece would only care about managing roles and permissions for the ALM Tools but not for the
  credentials.
  
@@ -54,7 +53,7 @@ for multiple reasons.
   This will be running in a remote system. As we said earlier this manage the corporate user credentials.
 
 - **Openldap**
-  I bet for Openldap as a system to manage the roles due to I got some great experience working with it and there are plenty of **how to's** on
+  I bet for Openldap as a system to manage the roles since I've got some great experience working with it and there are plenty of **how to's** on
   the Internet.
 
   As I said earlier we will run the Openldap into a Docker container. We will need to connect to SASL.
@@ -84,14 +83,14 @@ So to sum up we could draw a new diagram:
   
 **slapd.conf**
 
-  This file is read by Openldap and here we define the password authetnication protocol. As we see we define as **saslauthd**
-  but also we are defined the directory where teh sasl socker will be running on.
+  This file is read by Openldap and here we define the password authentication protocol. As we can see, we define as **saslauthd**
+  but also we are defined the directory where teh sasl socket will be running on.
 
   {% gist a8b6a7dbc418710821bfe9b105097e9e %}
   
 **saslatuhd.conf**
   
-  This files contains the connection details to the remote active directory. It's not rock science at all. 
+  This file contains the connection details to the remote active directory. It's not rock science at all. 
   
   {% gist 18914b9a342cb6d1b38eea9b708ba7d1 %}
   
