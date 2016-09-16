@@ -135,6 +135,14 @@ After running the task a new directory called **scenarios** will be created in t
  
  ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/scenario1_2.png)
  
+ - Run your first scenario to check everything works as expected. Tu run the exkorpion scenearios you onyly need to write the below command:
+ 
+{% highlight bash %}
+ MIX_ENV=test mix exkorpion
+{% endhighlight %}
+
+![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/scenario1_3.png)
+ 
  
  
 ## The code
