@@ -180,6 +180,14 @@ a postgrest database (See postgresql configuration in **/config/config.exs**
 {% endhighlight %}
 
 Now we have a postgresql running on our machine with same config details for the **Ecto** configuration
+
+- Create a file **track_router_v3_scenario.exs** in **/scenarios/** directory.
+
+- As we are writing acceptance tests we need to ensure the database status is always the same for all the executions, so we will take advantage of **ECto** and
+ we run the sceneario always with the same data. To achieve this we need to add the below commands into the **/scenearios/sceneario_helper.exs**
+ 
+ ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/sceneario_helper-2.png)
+ 
  
 ## The code
 
