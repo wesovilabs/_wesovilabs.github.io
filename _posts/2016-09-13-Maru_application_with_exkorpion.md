@@ -183,14 +183,26 @@ Now we have a postgresql running on our machine with same config details for the
 
 - Create a file **track_router_v3_scenario.exs** in **/scenarios/** directory.
 
-- As we are writing acceptance tests we need to ensure the database status is always the same for all the executions, so we will take advantage of **ECto** and
+- As we are writing acceptance tests we need to ensure the database status is always the same for all the executions, so we will take advantage of **Ecto** and
  we run the sceneario always with the same data. To achieve this we need to add the below commands into the **/scenearios/sceneario_helper.exs**
  
  ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/sceneario_helper-2.png)
  
-- To test V2 we will write only one case that will add a new track to the system (this time ina  database= and it will check the new element is returned. 
+- To test V2 we will write only one case that will add a new track to the system (this time in a real database) and it will check the size of the tracks has been
+increased after adding a new element. 
 
 ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/scenario2_1.png)
+ 
+ - Running both scenarios
+ 
+{% highlight bash %}
+ MIX_ENV=test mix exkorpion
+{% endhighlight %}
+ 
+ ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/scenario2_2.png)
+ 
+ Ecto traces are beign 
+ 
  
 ## The code
 
