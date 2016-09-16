@@ -123,7 +123,7 @@ After running the task a new directory called **scenarios** will be created in t
 
 ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/sceneario_helper-1.png)
 
-**Writing scenario for a mocked REST API**: First scenario will be focused on testing API V1 (**track_router_v1.ex**) . This version just works with mocked data so we won't be required
+**Writing a scenario for REST API V1**: First scenario will be focused on testing API V1 (**track_router_v1.ex**) . This version just works with mocked data so we won't be required
  to run any database.
  
  - Create a file **track_router_v1_scenario.exs** in **/scenarios/** directory.
@@ -170,6 +170,16 @@ we can observe the descriptive output when something fails
  
  ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/scenario1_7.png)
  
+**Writing a scenario for REST API V2**: Bear in mind this version of the api will run on a real environment and the application will need to access to 
+a postgrest database (See postgresql configuration in **/config/config.exs** 
+
+- First step now, it will be run the docker compose on **/docker** directory, so open a new terminal and run the scripts **/script/setup-environment.sh** 
+ 
+{% highlight bash %}
+ sh scripts/setup-environment.sh
+{% endhighlight %}
+
+Now we have a postgresql running on our machine with same config details for the **Ecto** configuration
  
 ## The code
 
