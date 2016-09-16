@@ -123,7 +123,7 @@ After running the task a new directory called **scenarios** will be created in t
 
 ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/sceneario_helper-1.png)
 
-**Writing scenario**: First scenario will be focused on testing API V1 (**track_router_v1.ex**) . This version just works with mocked data so we won't be required
+**Writing scenario for a mocked REST API**: First scenario will be focused on testing API V1 (**track_router_v1.ex**) . This version just works with mocked data so we won't be required
  to run any database.
  
  - Create a file **track_router_v1_scenario.exs** in **/scenarios/** directory.
