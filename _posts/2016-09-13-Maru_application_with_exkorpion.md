@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Testing your Rest API with Exkorpion"
+title:  "Testing your Maru application with Exkorpion"
 date:   2016-09-13 11:15:02
 description: Exkorpion.
 categories: exkorpion elixir mix maru
@@ -201,9 +201,12 @@ increased after adding a new element.
  
  ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/scenario2_log.png)
  
- Ecto traces are beign 
- 
+ Now we can ensure our **Maru Rest API work as expected**
  
 ## The code
+ 
+ In case of you have any doubt please have a look at my forked project **[here](https://github.com/ivancorrales/elixir_maru_training)**
+ 
+ 
 
 
