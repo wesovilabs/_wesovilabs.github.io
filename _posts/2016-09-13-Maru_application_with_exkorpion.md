@@ -82,7 +82,7 @@ The above records represent the services.
 
 **Go to the repository**: **[elixir_maru_training](https://github.com/wesovilabs/elixir_maru_training)** is a repository hosted on Github.
 
-![Fork](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/elixir_maru_training.png)
+![elixir_maru_training](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/elixir_maru_training.png)
 
 **Fork the repository**:
 
@@ -96,7 +96,15 @@ git clone https://github.com/ivancorrales/elixir_maru_training.git
 
 **Add exkorpion dep to your project**: Lets  open the **mix.exs**, add exkorpion dependency and download the dependencies.
 
-![Fork](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/exkorpion-dependency.png)
+![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/exkorpion_dependency.png)
+
+**Download your deps**: Check into the directory and run 
+
+{% highlight bash %}
+mix deps.get
+{% endhighlight %}
+
+This command will download all required dependencies from this project.
 
 ## The code
 
