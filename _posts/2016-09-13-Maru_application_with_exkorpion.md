@@ -188,6 +188,9 @@ Now we have a postgresql running on our machine with same config details for the
  
  ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/sceneario_helper-2.png)
  
+- To test V2 we will write only one case that will add a new track to the system (this time ina  database= and it will check the new element is returned. 
+
+![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/scenario2_1.png)
  
 ## The code
 
