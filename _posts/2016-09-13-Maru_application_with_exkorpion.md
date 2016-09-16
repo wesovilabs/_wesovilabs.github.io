@@ -121,8 +121,19 @@ mix exkorpion.init
 After running the task a new directory called **scenarios** will be created in the project root. Inside this directory we can find the file
 **scenario_helper.exs** that looks like this
 
+![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/sceneario_helper-1.png)
 
-
+**Writing scenario**: First scenario will be focused on testing API V1 (**track_router_v1.ex**) . This version just works with mocked data so we won't be required
+ to run any database.
+ 
+ - Create a file **track_router_v1_scenario.exs** in **/scenarios/** directory.
+ - We write the module that will contain the scenarios block
+ 
+ ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/sceneario1_1.png)
+ 
+ 
+ 
+ 
 ## The code
 
 
