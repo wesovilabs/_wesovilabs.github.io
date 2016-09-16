@@ -96,15 +96,32 @@ git clone https://github.com/ivancorrales/elixir_maru_training.git
 
 **Add exkorpion dep to your project**: Lets  open the **mix.exs**, add exkorpion dependency and download the dependencies.
 
+Add the below dep to deps function:
+
+{% highlight elixir %}
+{:exkorpion, "~> 0.0.2", only: [:test]}
+{% endhighlight %}
+
 ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/exkorpion_dependency.png)
 
-**Download your deps**: Check into the directory and run 
+**Download your deps**: Check into the project directory and run 
 
 {% highlight bash %}
 mix deps.get
 {% endhighlight %}
 
 This command will download all required dependencies from this project.
+
+**Create the exkorpion structure**: By running the below task we setup the directoies to work with exkorpion
+
+{% highlight bash %}
+mix exkorpion.init
+{% endhighlight %}
+
+After running the task a new directory called **scenarios** will be created in the project root. Inside this directory we can find the file
+**scenario_helper.exs** that looks like this
+
+
 
 ## The code
 
