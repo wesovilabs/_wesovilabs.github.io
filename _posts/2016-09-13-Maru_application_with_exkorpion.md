@@ -142,6 +142,23 @@ After running the task a new directory called **scenarios** will be created in t
 {% endhighlight %}
 
 ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/scenario1_3.png)
+
+As we can observe on the above execution the tests was successful. We can make a change in thest to observe how the execution will look when
+the test fails. For example we will say the length of the list is 3 instead of 2. 
+
+![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/scenario1_4.png)
+
+After running the scenearios
+
+{% highlight bash %}
+ MIX_ENV=test mix exkorpion
+{% endhighlight %}
+
+we can observe the descriptive output when something fails
+
+![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/scenario1_5.png)
+
+
  
  
  
