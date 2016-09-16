@@ -131,6 +131,9 @@ After running the task a new directory called **scenarios** will be created in t
  
  ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/sceneario1_1.png)
  
+ - Write a test to check the get-tracks services in v1 work as expected. Don't forget this is a mocked service that will always return 2 elements.
+ 
+ ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/scenario1_2.png)
  
  
  
