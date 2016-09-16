@@ -10,7 +10,7 @@ comments: true
 ## Purpose
 
  The purpose of this article is sharing with other geeks my experience developing an application with Elixir.  A few months ago I just did
- some researches in coding with Erlang and to be honest I really enjoyed it writing the article *[First steps with Erlang](http://www.wesovilabs.com/erlang/demo/tutorial/example/sample/2016/01/29/First-steps-with-erlang/)*, but this time  I will go for a more real application which could provide me with some better feedback
+ some researches in coding with Erlang and to be honest I really enjoyed it writing the article *[First steps with Erlang](http://www.wesovilabslabs.com/erlang/demo/tutorial/example/sample/2016/01/29/First-steps-with-erlang/)*, but this time  I will go for a more real application which could provide me with some better feedback
  about this functional programming language.
  
 ## What's Elixir?

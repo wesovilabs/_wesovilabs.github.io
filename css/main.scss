@@ -52,4 +52,14 @@ $on-laptop:        800px;
 ;
 
 
+.mbtablestyle {
+  border-collapse: collapse;
 
+  > table, th {
+    text-align: left;
+  }
+  > table, td, th {
+    border: 0.1em solid #cccccc;
+    padding: 0.5em;
+  }
+}

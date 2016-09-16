@@ -37,7 +37,7 @@ The purpose of this article is run our acceptance tests for a couple of micro se
 
 First of all, we will create our Spring micro services. We can do it taking advantage of this site [https://start.spring.io/](https://start.spring.io/) which I found recently and It is so handy since it provides us with a skeleton of a spring boot project.
 
-You can find the code on the following [link](http://www.wesovi.com/microservice-docker-compose/)
+You can find the code on the following [link](http://www.wesovilabs.com/microservice-docker-compose/)
 
 If you download the code you will see a maven project with three submodules:
 
@@ -116,7 +116,7 @@ Below some pros and cons of doing acceptance tests as is explained in this artic
   *   Developers need to have basic knowledge about docker.
 
 ## Code
-You can find the code on my github repo [link](http://www.wesovi.com/microservice-docker-compose/)
+You can find the code on my github repo [link](http://www.wesovilabs.com/microservice-docker-compose/)
 
 The steps to run the example are explained on Git repository (README.md), Be aware of the first time you run the example this will take a little more as the virtual environment is created. In this example, I assume you have vegrant installed on your computer.
 

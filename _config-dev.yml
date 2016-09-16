@@ -16,7 +16,7 @@ markdown: kramdown
 
 #jekyll-paginate
 
-paginate: 3
+paginate: 15
 paginate_path: "/blog/page:num"
 
 permalink: pretty
