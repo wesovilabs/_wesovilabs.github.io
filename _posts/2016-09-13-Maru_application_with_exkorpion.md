@@ -163,6 +163,13 @@ we can observe the descriptive output when something fails
 
  ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/scenario1_6.png)
  
+ As we can observe in the second test will be checking that the size for the track list has increased but also that the new element has been
+ included into the list.
+ 
+ Now we when running the tests will check both tests in the scenario were successful.
+ 
+ ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/scenario1_7.png)
+ 
  
 ## The code
 
