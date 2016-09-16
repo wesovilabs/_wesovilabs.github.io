@@ -199,7 +199,7 @@ increased after adding a new element.
  MIX_ENV=test mix exkorpion
 {% endhighlight %}
  
- ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/scenario2_2.png)
+ ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/scenario2_log.png)
  
  Ecto traces are beign 
  
