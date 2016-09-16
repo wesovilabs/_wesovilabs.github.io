@@ -210,5 +210,5 @@ increased after adding a new element.
  
 ## Shared it!
 
-You like this post,  feel free to shared with other colleagues on Twitter by clicking [here](http://twitter.com/share?text=Testing Maru application with exkorpion!&url=http://www.wesovilabs.com/elixir/2016/09/13/Maru_application_with_exkorpion/&hashtags=elixirlang&via=wesovilabs) 
+You like this post,  feel free to [shared with other colleagues on Twitter](http://twitter.com/share?text=Great post about testing Maru applications with exkorpion!&url=http://www.wesovilabs.com/elixir/2016/09/13/Maru_application_with_exkorpion/&hashtags=elixirlang&via=wesovilabs) 
 
