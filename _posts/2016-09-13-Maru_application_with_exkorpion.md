@@ -99,7 +99,7 @@ git clone https://github.com/ivancorrales/elixir_maru_training.git
 Add the below dep to deps function:
 
 {% highlight elixir %}
-{:exkorpion, "~> 0.0.2", only: [:test]}
+{:exkorpion, "~> 0.0.2", only: [:dev, :test]}
 {% endhighlight %}
 
 ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/exkorpion_dependency.png)
