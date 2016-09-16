@@ -161,7 +161,7 @@ we can observe the descriptive output when something fails
 - The second services provided by API V1 will insert a new track into the mocked list and return 3 elements to the client. To write
  this test will make use of two reserved words in Exkorpion: **with** and **given**. The key with, will allow us to run the same test for multiple cases. 
 
- 
+ ![mix.exs](https://raw.githubusercontent.com/wesovilabs/wesovilabs.github.io/master/assets/images/posts/exkorpion/scenario1_6.png)
  
  
 ## The code
