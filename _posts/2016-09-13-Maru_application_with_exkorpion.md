@@ -3,7 +3,7 @@ layout: post
 title:  "Testing your Maru application with Exkorpion"
 date:   2016-09-13 11:15:02
 description: Exkorpion.
-categories: exkorpion elixir mix maru
+categories: elixir
 banner_image: "posts/getting_started_with_elixir/elixir-logo.png"
 comments: true
 ---
